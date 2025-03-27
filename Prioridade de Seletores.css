@@ -1,0 +1,17 @@
+//PRIORIDADE DE SELETORES:
+1. DE ID;
+2. DE CLASSE;
+3. DE ELEMENTO.
+
+//EXEMPLO: 
+
+<section>
+      <h2>Notícias Tech</h2>
+      <h3>IAs</h3>
+      <p class="textoAzul textoBold" id="textoRosa">Texto qualquer <b>em negrito</b></p>
+
+      <h3>Novidades JS</h3>
+      <p class="textoAzul textoBold" id="textoRosa">Lorem Ipsum is simply dummy text.</p>
+    </section>
+
+// O TEXTO "Texto qualquer" E "Lorem Ipsum is simply dummy text." FICARÃO NA COR ROSA, POIS id > class
