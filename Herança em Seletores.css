@@ -1,0 +1,41 @@
+//EXEMPLO:
+
+<nav>
+      <ul>
+        <li>
+          <a>Sobre Mim</a>
+        </li>
+        <li>
+          <a>Notícias</a>
+        </li>
+        <li>
+          <a><strong>Contato</strong></a>
+        </li>
+      </ul>
+    </nav>
+
+// style.css
+
+  nav {
+      front-size: 30px
+      }
+
+// OS TEXTOS CONTIDOS NO INTERVALO <nav></nav> TERÃO 30px , MESMO SE EU ATRIBUIR 20px AO INTERVALO <li></li> PORQUE <nav> É O "PAI" E O <li> É O "FILHO"
+
+//EXEMPLO MAIS SIMPLES:
+
+<section>
+    <h1> Oi </h1>
+</section>
+
+// style.css
+
+h1 {
+   color: black
+   }
+
+section {
+        color: red
+        }
+
+// O TEXTO "Oi" VAI SER VERMELHO, PORQUE <section> É O "PAI" E <h1> É O FILHO.
