@@ -1,0 +1,25 @@
+<section>
+      <h1>Cores</h1>
+      <p id="hexadecimal">Cor Hexadecimal</p>
+      <p id="hexadecimalComOpacidade">Cor Hexadecimal com opacidade 50%</p>
+      <p id="rgb">Cor em RGB</p>
+      <p id="rgba">Cor em RGBA (com opacidade)</p>
+    </section>
+
+//style.css
+
+#hexadecimal{
+  color: #0000ff; //formato hexadecimal //TEXTO "Cor Hexadecimal" fica AZUL (0000ff = código hexadecimal do Azul)
+}
+
+#hexadecimalComOpacidade{
+  color: #0000ff50; //opacidade = 50 // TEXTO "Cor Hexadecimal com opacidade 50%" FICA AZUL COM OPACIDADE 50%
+}
+
+#rgb{
+  color: rgb(203, 12, 229); // valores entre 0 e 255 // TEXTO "Cor em RGB" FICA ROSA
+}
+
+#rgba{
+  color: rgb(203, 12, 229, 0.5); // opacidade = 0.5 (valores entre 0 e 1) // TEXTO "Cor em RGBA (com opacidade)" FICA ROSA COM OPACIDADE 0.5
+}
