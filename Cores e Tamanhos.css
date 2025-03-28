@@ -63,6 +63,7 @@ section{
 #rem{
   font-size: 1rem; /*1X o tamanho do elemento raiz <html>*/ // 1X O TAMANHO DO ELEMENTO RAIZ: <html>
 }
+      // O "em" E O "rem" SÃO USADOS SOMENTE PARA "front-size"
 
 #caixa{
   background-color: pink; /* O vh E O vw SÃO USADOS SOMENTE EM <div> 
