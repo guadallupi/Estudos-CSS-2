@@ -1,0 +1,32 @@
+/* ESCOLHENDO AS FONTES PARA O TEXTO, USANDO LINKS. PESQUISAR: Google Fonts
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Aula 5 - CSS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+    <link tel="preconnect" href="https://fonts.googleopis.com">
+    <link href=""https://fonts.googleopis.com/css...">
+  </head>
+  <body>
+    <h1>Estilizando textos</h1>
+    <p>
+      Olá, tudo bem com você!
+    </p>
+    <p id="exemplo"> exemplo</p>
+  </body>
+</html>
+
+// STYLE.CSS
+
+p{
+  font-family: "Rubik", monospace; /* OUTRAS FONTES: "serif", "sans-serif", "cursive", "fantasy", "monospace". */
+  font-weight: 100; /* varia de 100 a 900 (de 100 em 100)*/
+  font-style: italic;
+}
+
+#exemplo{
+  text-transform: capitalize;  /* Capitalize (LETRA INICIAL MAIÚSCULA), UPPERCASE (TUDO MAIÚSCULO), lowercase (TUDO MINÚSCULO) */
+  text-align: center; /* CENTRALIZA O TEXTO "exemplo"
+}
