@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Aula 6 - CSS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"> 
+  </head>
+<body>
+    <h1>Estilizando imagens</h1>
+    <h2>Tag img</h2>
+    <img src="assets/foto-Bia.jpeg"> //IMPORTAÇÃO DA IMAGEM DA PASTA ASSETS
+    <h2>Div com background-image</h2>
+    <div id="bia"></div>
+  </body>
+</html>
+
+// 1. PARA IMAGENS QUADRADAS:
+
+//style.css
+img{
+  border-radius: 50%; // ARREDONDAR BORDAS
+  height: 200px;      // ALTURA
+  /* border: 2px solid red; */
+  filter: grayscale(100%); // FILTRO PRETO EM BRANCO
+}
+
+//2. PARA IMAGENS REDONDAS:
+
+//style.css
+
+ //TEM QUE CRIAR UMA <div></div> : <div id="bia"></div>
+
+#bia{                  
+  background-image: url('assets/foto-Bia.jpeg'); //LOCALIZA A IMAGEM (PASTA assets)
+  height: 200px; //ALTURA
+  width: 200px; // LARGURA
+  background-size: cover; // IMAGEM COBRE O QUADRADO /*(center = IMAGEM NO CENTRO)*/
+  background-position: 0 80%; //POSIÇÃO DA IMAGEM NO QUADRADO (0 = horizontal; 80% = vertical)
+  /*background-position: horizontal vertical;*/
+  border-radius: 50%; // BORDAS
+}
