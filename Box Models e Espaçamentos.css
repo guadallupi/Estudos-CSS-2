@@ -1,0 +1,40 @@
+//* BOX MODELS E ESPAÇAMENTOS:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Aula 7 - CSS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css"> // SEMPRE COLOCAR A PASTA DO style.css NO <head> 
+  </head>
+  <body>
+    <h1>Box Model e Espaçamentos</h1>
+    <div id="caixa1">
+      conteúdo
+    </div>
+    <div id="caixa2">
+      conteúdo
+    </div>
+  </body>
+</html>
+
+//* STYLE.CSS
+
+#caixa1, #caixa2{
+  width: 100px; // LARGURA
+  height: 100px; // ALTURA
+}
+
+#caixa1{
+  background-color: #eb399e;
+  padding: 10px; 
+  border: 2px solid #000000; // BLACK = 000000
+  /* margin: 0px 0px 10px 0px; topo, direita, baixo, esquerda*/
+  margin-bottom: 10px; // DÁ O ESPAÇAMENTO SEM DEFORMAR A CAIXA, OU SEJA, MUDA SÓ O TAMANHO DO LADO DE BAIXO
+  box-sizing: border-box; //WIDTH x HEIGHT
+}
+
+#caixa2{
+  background-color: #53dc41;
+  box-sizing: border-box;
+}
