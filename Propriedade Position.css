@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Aula 9 - CSS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1>Propriedade <u>Position</u></h1>
+    <div id="itens"> // div SUPERIOR = PLANO DE FUNDO
+      <div id="absoluta"> // div SECUNDÁRIA = ITEM 1, ITEM 2, ITEM 3
+        <span id="span1">Item 1</span>
+        <span id="span2">Item 2</span>
+        <span id="span3">Item 3</span>
+      </div>
+    </div>
+  </body>
+</html>
+
+// STYLE.CSS
+
+#itens{
+  background-color: rgb(197, 237, 185);
+  height: 200px;
+  position: relative; //CENTRALIZA O PLANO DE FUNDO
+}
+
+span{
+    background-color: rgb(110, 200, 82); // COR DOS ITENS
+}
+
+#absoluta{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); // CENTRALIZA OS 3 ITENS 
+}
