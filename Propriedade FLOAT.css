@@ -1,0 +1,65 @@
+// POSICIONAR ELEMENTOS NA TELA À ESQUERDA OU À DIREITA:
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title>Aula 10 - CSS</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav> //BARRA DE NAVEGAÇÃO SUPERIOR (<head>)
+      <img class="cafe" src="assets/xicara-de-cafe.png"> //IMAGEM PARA COLOCAR NA BARRA
+      <ul> //LISTA DE ITENS PARA COLOCAR NA BARRA
+        <li>Item 1</li>
+        <li>Item 2</li>
+        <li>Item 3</li>
+        <li>Item 4</li>
+      </ul>
+    </nav>
+
+//STYLE.CSS
+
+.cafe{ //IMAGEM DO CAFÉ 
+  height: 24px;
+  padding-top: 10px;
+}
+
+nav{
+  background-color: grey; //COR DE FUNDO
+  padding: 0 40px; // HORIZONTAL = 0px, VERTICAL = 40px
+  height: 50px; // ALTURA
+}
+
+ul{
+  float: right; //LISTA POSICIONADA À DIREITA (*FLOAT: right)
+
+  li{
+    display: inline-block; //LISTA CENTRALIZADA NO nav (BARRA DE NAVEGAÇÃO EM CIMA)
+    line-height: 50px;
+    margin-right: 20px; //DISTÂNCIA ENTRE OS ITENS 
+  }
+}
+
+//*FLOAT NA IMAGEM PRINCIPAL:
+
+    <h1>Propriedade <u>Float</u></h1>
+    <div class="noticias">
+      <img class="fotoBia" src="assets/foto-Bia.jpeg"> //FOTO PRINCIPAL 
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+    </div>
+  </body>
+</html>
+
+// STYLE.CSS
+
+.fotoBia{
+  height: 300px;
+  float: left; //IMAGEM POSICIONADA À ESQUERDA DO TEXTO (*FLOAT: left)
+  margin: 0 20px 20px 0; //MARGENS DA IMAGEM EM RELAÇÃO AO TEXTO
+}
+
+.noticias{
+  overflow: auto; //POSIÇÃO DO TEXTO AUTOMÁTICA
+}
